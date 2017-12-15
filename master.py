@@ -10,7 +10,7 @@ def set_repo():
     try:
         repo = Repository('./repo')
     except:
-        repo_url = 'FLASK_SERVER_NAME'
+        repo_url = FLASK_SERVER_NAME
         repo_path = './repo'
         repo = clone_repository(repo_url, repo_path)
     return repo
@@ -29,7 +29,7 @@ def task():
 
     try:
         commit_hash = commits[todo]
-        todo += 1
+        todo = todo + 1
         end_time = time() - start_time
         print(end_time)
         return jsonify({'commit': str(commit_hash.id), 'id': todo})
