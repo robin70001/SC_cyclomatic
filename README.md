@@ -9,4 +9,4 @@ To execute from command line run these commands:
     python ./worker.py
 
 Output Graph generated
-![Results](https://github.com/robin70001/SC_cyclomatic/blob/master/Cyclo_graph.png "Results")	
+![Results](https://github.com/robin70001/SC_cyclomatic/blob/master/Cyclo_graph.png "Cyclo_graph")	
